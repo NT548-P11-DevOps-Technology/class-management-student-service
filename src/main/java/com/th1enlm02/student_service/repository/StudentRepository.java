@@ -1,6 +1,6 @@
-package com.th1enlm02.studentsystem.repository;
+package com.th1enlm02.student_service.repository;
 
-import com.th1enlm02.studentsystem.model.Student;
+import com.th1enlm02.student_service.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.th1enlm02.studentsystem.controller;
+package com.th1enlm02.student_service.controller;
 
-import com.th1enlm02.studentsystem.model.Student;
-import com.th1enlm02.studentsystem.service.StudentService;
+import com.th1enlm02.student_service.model.Student;
+import com.th1enlm02.student_service.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class StudentController {
     @PostMapping("/add")
     public String add(@RequestBody Student student) {
         studentService.saveStudent(student);
-        return "New student is added";
+        return "Student added successfully";
     }
 
     @GetMapping("/getAll")

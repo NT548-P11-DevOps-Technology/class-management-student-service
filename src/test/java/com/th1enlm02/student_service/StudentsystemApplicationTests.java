@@ -1,4 +1,4 @@
-package com.th1enlm02.studentsystem;
+package com.th1enlm02.student_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

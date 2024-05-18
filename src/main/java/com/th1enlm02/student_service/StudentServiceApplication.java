@@ -1,13 +1,13 @@
-package com.th1enlm02.studentsystem;
+package com.th1enlm02.student_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudentsystemApplication {
+public class StudentServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StudentsystemApplication.class, args);
+		SpringApplication.run(StudentServiceApplication.class, args);
 	}
 
 }

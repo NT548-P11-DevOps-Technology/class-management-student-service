@@ -1,7 +1,7 @@
-package com.th1enlm02.studentsystem.service;
+package com.th1enlm02.student_service.service;
 
-import com.th1enlm02.studentsystem.model.Student;
-import com.th1enlm02.studentsystem.repository.StudentRepository;
+import com.th1enlm02.student_service.model.Student;
+import com.th1enlm02.student_service.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
