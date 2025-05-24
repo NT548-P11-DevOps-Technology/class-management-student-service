@@ -20,9 +20,23 @@ on:
           - stag
 
 jobs:
-  call-reusable-workflow:
-    uses: NT548-P11-DevOps-Technology/class-management-FE/.github/workflows/main.yml@main
-    with:
-      branch: ${{ github.event.inputs.branch || github.ref_name }}
-    secrets: inherit
+  # call-reusable-workflow:
+  #   uses: NT548-P11-DevOps-Technology/class-management-FE/.github/workflows/main.yml@main
+  #   with:
+  #     branch: ${{ github.event.inputs.branch || github.ref_name }}
+  #   secrets: inherit
 
+  predict-build-error:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+  
+      - name: Predict Build Error
+        uses: NT505-P21-KLTN-ThienLM-PhuongQTH/CI-build-failure-prediction-action@main
+        # with:
+        #   api-token: ${{ secrets.API_TOKEN }}
+          
+      - name: Check the result
+        run: |
+          echo "Hello World!"
