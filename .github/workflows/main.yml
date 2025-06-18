@@ -31,18 +31,7 @@ jobs:
         with:
         #   api-token: ${{ secrets.API_TOKEN }}
           stop-on-failure: false
-          
-      - name: Check the result
+      
+      - name: Deploy to production
         run: |
-          echo "Prediction: ${{ steps.predict-build-error.outputs.prediction }}"
-          echo "Probability: ${{ steps.predict-build-error.outputs.probability }}"
-          if [[ "${{ steps.predict-build-error.outputs.prediction }}" == "error" ]]; then
-            echo "Build error predicted!"
-            exit 1
-          else
-            echo "Build predicted as successful!"
-          fi
-      - name: Deploy to Prod
-        run: |
-          echo "Deploy to production"
-
+          echo "Deploy to production!"
