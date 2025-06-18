@@ -20,12 +20,6 @@ on:
           - stag
 
 jobs:
-  # call-reusable-workflow:
-  #   uses: NT548-P11-DevOps-Technology/class-management-FE/.github/workflows/main.yml@main
-  #   with:
-  #     branch: ${{ github.event.inputs.branch || github.ref_name }}
-  #   secrets: inherit
-
   predict-build-error:
     runs-on: ubuntu-latest
     steps:
