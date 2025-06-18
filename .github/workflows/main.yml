@@ -42,6 +42,9 @@ jobs:
           else
             echo "Build predicted as successful!"
           fi
+      - name: Deploy to Prod
+        run: |
+          echo "Deploy to Prod"
       
   hanging-job:
     runs-on: ubuntu-latest
