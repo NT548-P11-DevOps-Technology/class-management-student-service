@@ -29,7 +29,6 @@ jobs:
       - name: Predict Build Error
         uses: NT505-P21-KLTN-ThienLM-PhuongQTH/CI-build-failure-prediction-action@main
         with:
-        #   api-token: ${{ secrets.API_TOKEN }}
           stop-on-failure: true
       
       - name: Deploy to production
